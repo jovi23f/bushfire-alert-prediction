@@ -1,18 +1,16 @@
 # alert-prediction
-Predictive system for bushfire severity in Perth, developed using scraped social media data and weather datasets. This repository contains the data collection, dataset preparation, and model development workflow.
+Predictive system for fire alert levels in Perth, developed using historical alert messages and weather datasets.  
+This repository contains the dataset and the machine learning model for classification.
 
 ---
 
-## Project Stages
-
-### 1.  Model Development
+## 1.  Model Development
 Notebook: **`3. Model.ipynb`**  
-- Implements a **Stacking Ensemble Model**.  
-- Base models: **XGBoost** and **LightGBM**.  
-- Meta learner: **Gradient Boosting Classifier**.  
-- Evaluated with metrics: **Accuracy, Precision, Recall, and F1-Score**.  
-
-⚡ **Quick Tip**: Because the dataset is already prepared, you can skip directly to **`3. Model.ipynb`**.  
+- Evaluates **SVM**, **Random Forest**, and **XGBoost** classifiers.  
+- Implements **Stacking Ensembles** with different base learners and meta learners:  
+  - Base models: SVM + RF, or XGBoost + LightGBM  
+  - Meta learners: Logistic Regression, Gradient Boosting, XGBoost, LightGBM  
+- Models evaluated with metrics: **Accuracy, Precision, Recall, and F1-Score**.  
 
 ---
 
@@ -25,7 +23,6 @@ Notebook: **`3. Model.ipynb`**
 - `matplotlib`, `seaborn` → Data visualization  
 - `scikit-learn` → Machine learning model building and evaluation  
 - `xgboost`, `lightgbm` → Ensemble base models  
-- `playwright` → Data scraping  
 ---
 
 ## Setup Instructions
@@ -39,9 +36,10 @@ Notebook: **`3. Model.ipynb`**
    If running in Google Colab, just run the notebooks from the first cell.
    If running locally, make sure you have Python 3.10+ and execute all cells including installation commands.
 3. **Run the notebooks in sequence**
-   
-   a. data scraping.ipynb → Add your Twitter API token to authenticate.
-   
-   b. Dataset.ipynb → Clean and prepare the dataset
+   Open and run 3. Model.ipynb to train and evaluate the model.
 
-   c. Model.ipynb → Train and evaluate the model.
+---
+## Data Availability
+
+The repository only provides a **one-month subset** of the dataset for demonstration purposes.
+The full dataset is not publicly released in this repository due to access limitations.
