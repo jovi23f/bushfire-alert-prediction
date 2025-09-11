@@ -29,8 +29,8 @@ Notebook: **`3. Model.ipynb`**
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/jovi23f/bushfire-alert-prediction.git
-   cd bushfire-alert-prediction
+   git clone https://github.com/jovi23f/alert-prediction.git
+   cd alert-prediction
 2. **Dependencies**
    You do not need a separate requirements.txt. All required libraries are already installed directly in the notebooks using pip install commands.
    If running in Google Colab, just run the notebooks from the first cell.
