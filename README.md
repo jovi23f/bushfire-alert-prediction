@@ -63,6 +63,9 @@ Notebook: **`3. Model.ipynb`**
    If running in Google Colab, just run the notebooks from the first cell.
    If running locally, make sure you have Python 3.10+ and execute all cells including installation commands.
 3. **Run the notebooks in sequence**
+   
    a. data scraping.ipynb → Add your Twitter API token to authenticate.
+   
    b. Dataset.ipynb → Clean and prepare the dataset
+
    c. Model.ipynb → Train and evaluate the model.
