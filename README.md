@@ -4,7 +4,7 @@ This repository contains the dataset and the machine learning model for classifi
 
 ---
 
-## 1.  Model Development
+## Model Development
 Notebook: **`3. Model.ipynb`**  
 - Evaluates **SVM**, **Random Forest**, and **XGBoost** classifiers.  
 - Implements **Stacking Ensembles** with different base learners and meta learners:  
@@ -35,11 +35,6 @@ Notebook: **`3. Model.ipynb`**
    You do not need a separate requirements.txt. All required libraries are already installed directly in the notebooks using pip install commands.
    If running in Google Colab, just run the notebooks from the first cell.
    If running locally, make sure you have Python 3.10+ and execute all cells including installation commands.
-3. **Run the notebooks in sequence**
+3. **Run the notebooks**
    Open and run 3. Model.ipynb to train and evaluate the model.
 
----
-## Data Availability
-
-The repository only provides a **one-month subset** of the dataset for demonstration purposes.
-The full dataset is not publicly released in this repository due to access limitations.
